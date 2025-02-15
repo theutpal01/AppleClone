@@ -15,7 +15,7 @@ const Footer = () => {
 						Features are subject to change. Some features, applications and services may not be available in all regions or all languages.</p>
 				</div>
 				<div className='bg-slate-300 h-0.5'></div>
-				<div className='grid grid-cols-5 text-xs py-5 text-slate-500 justify-end'>
+				<div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 text-xs py-5 text-slate-500 justify-end'>
 					<div className='flex flex-col *:py-1.5'>
 						<h4 className='text-slate-700 font-medium'>Shop and Learn</h4>
 						<a className='hover:underline' href='#'>Store</a>
@@ -90,10 +90,10 @@ const Footer = () => {
 						<a className='hover:underline' href='#'>Events</a>
 						<a className='hover:underline' href='#'>Contact Apple</a>
 					</div>
-				<p className='col-span-5 text-xs text-slate-500 *:text-blue-500 *:underline'>More ways to shop: <a href='#'>Find an Apple Store</a> or <a href='#'>other retailer</a> near you. Or call <a href='#'>000800 040 1966</a>.</p>
+				<p className='lg:col-span-5 md:col-span-3 sm:col-span-2 col-span-1 text-xs text-slate-500 *:text-blue-500 *:underline'>More ways to shop: <a href='#'>Find an Apple Store</a> or <a href='#'>other retailer</a> near you. Or call <a href='#'>000800 040 1966</a>.</p>
 				</div>
 				<div className='bg-slate-300 h-0.5'></div>
-				<div className='flex justify-between text-xs py-5 text-slate-500'>
+				<div className='flex flex-col md:flex-row justify-between text-xs py-5 text-slate-500'>
 					<p>Copyright © {new Date().getFullYear()} Apple Inc. All rights reserved.</p>
 					<div className='flex space-x-2'>
 						<a href="#">Privacy Policy</a>
@@ -106,7 +106,7 @@ const Footer = () => {
 						<p>|</p>
 						<a href="#">Site map</a>
 					</div>
-					<p>India</p>
+					<p className=''>India</p>
 				</div>
 			</div>
 		</div>
