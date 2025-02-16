@@ -39,7 +39,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div className={`fixed w-full bg-black z-40 transition-all duration-700 top-0 ${!open ? 'h-0' : 'h-screen'}`}>
-				<ul className={`flex duration-500 transition-all flex-col p-10 pt-20 z-50 text-white space-x-6 font-base ${!open ? 'opacity-0' : 'opacity-100'}`}>
+				<ul className={`flex duration-500 transition-all flex-col p-10 pt-20 z-50 text-white space-x-6 font-base ${!open ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
 					<a href="/"><li className="text-lg p-2">Store</li></a>
 					<a href="/"><li className="text-lg p-2">Mac</li></a>
 					<a href="/"><li className="text-lg p-2">iPad</li></a>
