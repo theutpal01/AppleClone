@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @font-face {
 	font-family: "PTSans";
 	font-style: normal;
@@ -17,7 +16,6 @@
 	src: url("/fonts/PTSans-Bold.ttf") format("truetype");
 }
 
-
 @font-face {
 	font-family: "Barlow";
 	font-style: normal;
@@ -26,14 +24,15 @@
 	src: url("/fonts/Barlow.ttf") format("truetype");
 }
 
-
 @theme {
 	--font-title: "PTSans-Bold", Roboto, sans-serif;
 	--font-heading: "PTSans", Roboto, sans-serif;
 	--font-base: "Barlow", sans-serif;
 }
 
-
-@utility  glow {
-	shadow:  "0 0px 20px rgba(255,255, 255, 0.35)",	"0 0px 65px rgba(255, 255,255, 0.2)"
+@layer utilities {
+	.shadow-glow {
+		box-shadow: 0 0px 20px rgba(0, 102, 255, 0.5),
+			0 0px 65px rgba(0, 102, 255, 0.3);
+	}
 }
